@@ -1,0 +1,145 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --dark-color: #322c2c;
+  --black-color: #000000;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+  --hover-color: #f8f8ff;
+}
+
+/* start navbar */
+
+nav {
+  background-color: var(--dark-color);
+}
+nav a img {
+  /* width: 75px;
+    height: 75px; */
+}
+.main-btn {
+  background-color: var(--section-color);
+  padding: 0.5rem 1erm;
+}
+.main-btn:hover {
+  background-color: var(--black-color);
+  color: var(--section-color);
+}
+.navbar .navbar-nav .nav-link {
+  color: #8c8c8c;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: var(--section-color);
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link.active:hover {
+  color: var(--section-color);
+}
+.navbar .navbar-toggler {
+  color: var(--section-color);
+}
+.navbar button svg {
+  color: var(--section-color);
+}
+
+.navbar .navbar-nav li ul {
+  background-color: var(--hover-color);
+  margin: 17px;
+  opacity: 0.8;
+}
+.navbar .navbar-nav li ul::before {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #f6f6f6 transparent;
+  position: absolute;
+  left: 0px;
+  top: -20px;
+}
+.navbar .navbar-nav li ul li a {
+  display: block;
+
+  padding: 10px;
+  transition: 0.3s;
+}
+.navbar .navbar-nav li ul li:not(:last-child) a {
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar .navbar-nav li ul li a:hover {
+  padding-left: 25px;
+}
+
+/* end navbar */
+/* start landing */
+.landing .slider .imm {
+  /* transition: all 2s 0.5s linear; */
+  /* transition-duration: 1s;
+  transition-delay: 4s; */
+  height: 100px;
+}
+
+.landing .slider {
+  /* transition: all 2s 0.5s linear; */
+  transition-duration: 1s;
+  transition-delay: 4s;
+}
+
+/* end landing */
+/* start dorma */
+.dorms .images {
+  transition: 0.5s;
+  height: 230px;
+  width: 350px;
+
+  /* width: 300px;
+  height: 250px; */
+}
+.dorms .image {
+  overflow: hidden;
+}
+.dorms .images:hover {
+  transform: scale(1.2);
+  margin-bottom: 1rem;
+}
+
+/* end dorms */
+/* start footer */
+.footer {
+  background-color: var(--dark-color);
+}
+.footer .contact ul svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer .facebook:hover {
+  color: #1877f2;
+  background-color: #ffc400;
+}
+
+.footer .twitter:hover {
+  color: #1da1f2;
+  background-color: #ffc400;
+}
+
+.footer .instagram:hover {
+  color: #c13584;
+  background-color: #ffc400;
+}
+
+.footer .youtube:hover {
+  color: #ff0000;
+  background-color: var(--black-color);
+}
+.footer .about span:hover {
+  color: var(--section-color);
+}
+/* end footer */
